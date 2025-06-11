@@ -177,14 +177,14 @@ function RestaurantList() {
                                                     <div className="footer-item">
                                                         <span className="footer-label">Delivery Fee:</span>
                                                         <span className="footer-value">
-                                                            {restaurant.deliveryFee > 0 ? `${restaurant.deliveryFee.toFixed(2)} $` : 'Free'}
+                                                            {restaurant.deliveryFee > 0 ? `${restaurant.deliveryFee.toFixed(2)} ₺` : 'Free'}
                                                         </span>
                                                     </div>
                                                 )}
                                                 {restaurant.minOrderAmount !== undefined && restaurant.minOrderAmount !== null && restaurant.delivery && (
                                                     <div className="footer-item">
                                                         <span className="footer-label">Min Order:</span>
-                                                        <span className="footer-value">${restaurant.minOrderAmount.toFixed(2)}</span>
+                                                        <span className="footer-value">{restaurant.minOrderAmount.toFixed(2)}₺</span>
                                                     </div>
                                                 )}
                                             </div>
